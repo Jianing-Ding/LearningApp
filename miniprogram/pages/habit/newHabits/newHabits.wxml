@@ -1,0 +1,44 @@
+<!--miniprogram/pages/habit/newHabits/newHabits.wxml-->
+<scroll-view scroll-y class="habitPage">
+<!--新建习惯-->
+<view class=" margin-sm bg-gray shadow-blur">
+<view>
+<text class="text-lg">新建习惯</text>
+</view>
+
+</view>
+<!--已有的习惯-->
+<!--健康-->
+<view class="cu-bar bg-white">
+    <view class="action title-style-3">
+      <text class="text-xl text-bold">健康</text>
+      <text class="text-Abc text-gray self-end margin-left-sm">Healthy</text>
+    </view>
+</view>
+<view class="grid col-3 margin-sm">
+  <view class="padding-sm" wx:for="{{colorList}}" wx:key>
+    <view class="bg-gray padding radius text-center shadow-blur">
+      <view class="text-lg">{{item.title}}</view>
+      <view class="margin-top-sm text-Abc">{{item.name}}</view>
+    </view>
+  </view>
+</view>
+<view class="cu-item" wx:for="{{icon}}" wx:key wx:if="{{item.isShow}}">
+    <text class="cuIcon-{{item.name}} lg text-gray"></text>
+    <text>{{item.name}}</text>
+</view>
+<!--日常-->
+<view class="cu-bar bg-white">
+    <view class="action title-style-3">
+      <text class="text-xl text-bold">日常</text>
+      <text class="text-Abc text-gray self-end margin-left-sm">Daily</text>
+    </view>
+</view>
+<!--学习-->
+<view class="cu-bar bg-white">
+    <view class="action title-style-3">
+      <text class="text-xl text-bold">学习</text>
+      <text class="text-Abc text-gray self-end margin-left-sm">Study</text>
+    </view>
+</view>
+</scroll-view>

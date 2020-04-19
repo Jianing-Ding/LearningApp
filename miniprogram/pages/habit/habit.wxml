@@ -1,0 +1,51 @@
+<!--miniprogram/pages/habit/habit.wxml-->
+<scroll-view scroll-y class="habitPage">
+<view class="dailyHabits">
+<!--悬浮按钮-->
+<view class="post padding-sm radius shadow shadow-blur bg-yellow" bindtap="onPostClick">
+<iconfont name="list" size="40"/>
+</view>
+
+
+
+
+<!--正在进行的习惯-->
+<!--今日习惯-->
+
+</view>
+<!--个人和组队导航栏-->
+<scroll-view scroll-x class="bg-green nav text-center">
+<!--"pages/habit/myHabits/myHabits"-->
+  <view class="cu-item {{0==TabCur?'text-white cur':''}}" bindtap="tabSelect" data-id="0" data-name="myHabits">
+    <text class="cuIcon-camerafill"></text> 个人
+  </view>
+  <view class="cu-item {{1==TabCur?'text-white cur':''}}" bindtap="tabSelect" data-id="1" data-name="team">
+    <text class="text-yellow cuIcon-upstagefill"></text> 组队
+  </view>
+</scroll-view>
+
+<!--个人-->
+<view wx:if="{{TabCur==='0'}}">
+<!--日期显示-->
+  <view class="cu-bar bg-white" bindtap="showCalendar">
+    <view class="action sub-title">
+      <text class="text-xl text-bold text-grey">{{date}}</text>
+      <text class="bg-grey"></text>
+      <!-- last-child选择器-->
+    </view>
+  </view> 
+<!--日历-->
+<view hidden="{{calendarHide}}">
+<calendar calendar-style="calendar" binddayClick="dayClick" />
+</view>
+  <view class="bg-img padding-bottom-xl" style="background-image: url('https://ossweb-img.qq.com/images/lol/web201310/skin/big10007.jpg');height: 207rpx;">
+    <view class="bg-shadeTop padding padding-bottom-xl">
+      上面开始
+    </view>
+  </view>
+<import src="/pages/habit/myHabits/myHabits.wxml"/>
+<template is="myHabits"> </template> 
+</view>
+
+<!--组队-->
+</scroll-view>

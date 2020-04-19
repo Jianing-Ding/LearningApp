@@ -1,0 +1,16 @@
+/* miniprogram/pages/habit/habit.wxss */
+.calendar {
+    background-color:white;  /*背景色为白色*/
+    padding-top: 10px;       /*上内边距为 10px*/
+    border-radius: 15px;     /*添加边框圆角*/
+}
+.post {
+    float: right;
+    background-color: #ffff;
+    position: fixed;
+    bottom: 20px;
+    right: 10px;  
+    border: 2 solid #f8b400;
+    border-radius: 500px;
+    z-index:999; 
+}

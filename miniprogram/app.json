@@ -1,0 +1,64 @@
+{
+  "pages": [
+    "pages/habit/habit",
+    "pages/posts/posts",
+    "pages/myInfo/info",
+    "pages/index/index",
+    "pages/userConsole/userConsole",
+    "pages/storageConsole/storageConsole",
+    "pages/databaseGuide/databaseGuide",
+    "pages/addFunction/addFunction",
+    "pages/deployFunctions/deployFunctions",
+    "pages/chooseLib/chooseLib",
+    "pages/openapi/openapi",
+    "pages/openapi/serverapi/serverapi",
+    "pages/openapi/callback/callback",
+    "pages/openapi/cloudid/cloudid",
+    "pages/im/im",
+    "pages/im/room/room",
+    "pages/diary/diary",
+    "pages/habit/myHabits/myHabits",
+    "pages/habit/team/team",
+    "pages/habit/newHabits/newHabits",
+    "pages/myInfo/setUp/setUp",
+    "pages/myInfo/history/history"
+  ],
+  "plugins": {
+    "calendar": {
+      "version": "1.1.3",
+      "provider": "wx92c68dae5a8bb046"
+    }
+  },
+  "usingComponents": {
+    "iconfont": "../icon/iconfont/iconfont"
+  },
+  "window": {
+    "backgroundColor": "#F6F6F6",
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#F6F6F6",
+    "navigationBarTitleText": "云开发 QuickStart",
+    "navigationBarTextStyle": "black"
+  },
+  "sitemapLocation": "sitemap.json",
+  "style": "v2",
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/habit/habit",
+        "text": "打卡"
+      },
+      {
+        "pagePath": "pages/diary/diary",
+        "text": "日记"
+      },
+      {
+        "pagePath": "pages/posts/posts",
+        "text": "广场"
+      },
+      {
+        "pagePath": "pages/myInfo/info",
+        "text": "个人信息"
+      }
+    ]
+  }
+}
