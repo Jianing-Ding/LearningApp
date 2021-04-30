@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_home">
+
+    <fragment
+        android:id="@+id/navigation_home"
+        android:name="com.example.mytry.ui.home.HomeFragment"
+        android:label="主页"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/navigation_dashboard"
+        android:name="com.example.mytry.ui.onLineTest.questionBaseChoose"
+        android:label="在线测试"
+        tools:layout="@layout/activity_ques_mode_choose" />
+
+    <fragment
+        android:id="@+id/navigation_notifications"
+        android:name="com.example.mytry.ui.personal.personalFragment"
+        android:label="我的"
+        tools:layout="@layout/fragment_notifications" />
+    <fragment
+        android:id="@+id/navigation_shop"
+        android:name="com.example.mytry.ui.shop.ShopFragment"
+        android:label="积分商城"
+        tools:layout="@layout/shop_fragment" />
+</navigation>

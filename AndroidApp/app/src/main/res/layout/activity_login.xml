@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:orientation="vertical"
+    tools:context=".Login">
+
+    <Button
+        android:id="@+id/login"
+        android:layout_width="145dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginEnd="50dp"
+        android:background="#40FFFFFF"
+        android:text="登录"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:textColor="#3F51B5"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/passward" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="72dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="160dp"
+        android:text="用户名"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="59dp"
+        android:layout_height="29dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="35dp"
+        android:text="密码"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <EditText
+        android:id="@+id/passward"
+        android:layout_width="225dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="23dp"
+        android:layout_marginEnd="30dp"
+        android:ems="10"
+        android:inputType="textPassword"
+        android:singleLine="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/description" />
+
+    <EditText
+        android:id="@+id/description"
+        android:layout_width="225dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="145dp"
+        android:layout_marginEnd="30dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:singleLine="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/register"
+        android:layout_width="145dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="100dp"
+        android:background="#40FFFFFF"
+        android:text="注册"
+        android:textColor="#3F51B5"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/passward" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

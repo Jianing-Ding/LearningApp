@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#000000"
+    >
+    <!-- 视频控件 -->
+    <VideoView
+        android:id="@+id/video_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        />
+    <ImageView
+        android:id="@+id/init_picture"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"/>
+    <!-- 播放控制面板 -->
+    <LinearLayout
+        android:id="@+id/control_panel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/video_view"
+        android:orientation="horizontal"
+        android:background="#70000000"
+        android:visibility="gone"
+        >
+
+        <ImageView
+            android:id="@+id/play_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:contentDescription="@string/app_name"
+            android:padding="4dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/ic_media_play_dark"
+            />
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_gravity="center_vertical"
+            >
+            <SeekBar
+                android:id="@+id/progress_bar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:maxHeight="4dp"
+                android:layout_centerVertical="true"
+                android:paddingStart="8dp"
+                android:paddingEnd="8dp"
+                />
+            <TextView
+                android:id="@+id/time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignEnd="@id/progress_bar"
+                android:layout_below="@id/progress_bar"
+                android:textSize="12sp"
+                android:textColor="#ffffff"
+                />
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/full_screen_button"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_gravity="center_vertical"
+            android:contentDescription="@string/app_name"
+            android:padding="4dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/full_screen" />
+    </LinearLayout>
+    <!-- 大播放按钮 -->
+    <ImageView
+        android:id="@+id/big_play_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:contentDescription="@string/app_name"
+        android:scaleType="centerInside"
+        android:src="@drawable/ic_media_play_dark"
+         />
+</RelativeLayout>
